@@ -1,5 +1,5 @@
 
-# request-oauth
+# @http/oauth
 
 
 ## Options
@@ -41,7 +41,7 @@
 
 ###### Optional
 
-- **realm** 
+- **realm**
 - **body_hash** pass you own [Body Hash][body-hash] as string or pass `true` to get one generated for you
 
 
@@ -73,6 +73,14 @@ else if (transport === 'body') {
 }
 ```
 
+
+## Notice
+
+This module may contain code snippets initially implemented in [request][request] by [request contributors][request-contributors].
+
+
+  [request]: https://github.com/request/request
+  [request-contributors]: https://github.com/request/request/graphs/contributors
 
   [pem-format]: http://how2ssl.com/articles/working_with_pem_files/
   [body-hash]: https://oauth.googlecode.com/svn/spec/ext/body_hash/1.0/oauth-bodyhash.html
