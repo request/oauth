@@ -8,8 +8,8 @@ var qs = require('qs')
 
 function oauth (options) {
   return build(
-    options.oauth, options.uri, options.method,
-    options.query, options.form, options.body
+    options.oauth, options.url, options.method,
+    options.url.query, options.form, options.body
   )
 }
 
@@ -18,7 +18,7 @@ function build (oauth, uri, method, query, form, body) {
 
   if (transport === 'body' && (method !== 'POST' || form === undefined)) {
     return new Error(
-      'oauth: transport_method: body requires method: POST ' +
+      'oauth: transport_method: body requires POST ' +
       'and content-type: application/x-www-form-urlencoded'
     )
   }
@@ -50,6 +50,9 @@ function build (oauth, uri, method, query, form, body) {
   else if (transport === 'body') {
     prefix = (form ? '&' : '')
     params = concatParams(oa, '&')
+  }
+  else {
+    return new Error('oauth: transport_method invalid')
   }
 
   return prefix + params
