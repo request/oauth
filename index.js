@@ -27,7 +27,7 @@ function build (oauth, uri, method, query, form, body) {
     var sig = oauth.signature_method || 'HMAC-SHA1'
     if (['HMAC-SHA1', 'RSA-SHA1'].indexOf(sig) < 0) {
       return new Error(
-        'oauth: signature_method: ' + oauth.signature_method +
+        'oauth: ' + oauth.signature_method + ' signature_method' +
         ' not supported with body_hash signing'
       )
     }
