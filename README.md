@@ -1,5 +1,7 @@
 
-# @http/oauth
+# @request/oauth
+
+> See [@request/core][request-core] for more details.
 
 
 ## Options
@@ -85,3 +87,4 @@ This module may contain code snippets initially implemented in [request][request
   [pem-format]: http://how2ssl.com/articles/working_with_pem_files/
   [body-hash]: https://oauth.googlecode.com/svn/spec/ext/body_hash/1.0/oauth-bodyhash.html
   [transport-method]: http://oauth.net/core/1.0/#consumer_req_param
+  [request-core]: https://github.com/request/core

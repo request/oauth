@@ -1,27 +1,28 @@
 {
-  "name": "@http/oauth",
+  "name": "@request/oauth",
   "version": "0.1.0",
   "description": "HTTP OAuth Authentication",
 
   "keywords": [
+    "request",
     "http",
     "https",
     "oauth"
   ],
 
   "license": "Apache-2.0",
-  "homepage": "https://github.com/node-http/oauth",
+  "homepage": "https://github.com/request/oauth",
 
   "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (http://simov.github.io)",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-http/oauth.git"
+    "url": "https://github.com/request/oauth.git"
   },
 
   "dependencies": {
-    "qs"        : "5.2.0",
-    "node-uuid" : "1.4.7",
+    "qs": "5.2.0",
+    "node-uuid": "1.4.7",
     "oauth-sign": "0.8.0"
   },
 
